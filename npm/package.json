@@ -1,0 +1,35 @@
+{
+  "name": "position-sizing-data",
+  "version": "0.1.0",
+  "description": "Reference data and arithmetic for risk-based position sizing across forex, stocks and crypto futures",
+  "keywords": [
+    "position sizing",
+    "risk management",
+    "forex",
+    "trading",
+    "crypto"
+  ],
+  "homepage": "https://positionsizetool.com/",
+  "bugs": {
+    "url": "https://github.com/tk25719/position-sizing-data/issues"
+  },
+  "license": "MIT",
+  "author": "JUN YI",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "data",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tk25719/position-sizing-data.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "node test/smoke.js"
+  }
+}
