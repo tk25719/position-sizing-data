@@ -20,7 +20,7 @@ import math
 from importlib import resources
 from typing import Dict, List
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "load_csv",
@@ -28,8 +28,34 @@ __all__ = [
     "pip_values",
     "losing_streak_equity",
     "drawdown_recovery",
+    "floor_to_step",
     "position_size",
 ]
+
+
+def floor_to_step(value: float, step: float) -> float:
+    """Round ``value`` DOWN to a whole multiple of ``step``.
+
+    A naive ``math.floor(value / step) * step`` is wrong at the edges: with a
+    10,000 USD account, 1% risk, a 20 pip stop and a 1,000 unit step, the exact
+    answer is 50,000 units, but the division yields 49.999999999999956 and the
+    naive floor collapses it to 49,000. That silently cuts the trade by a whole
+    mini lot.
+
+    Anything sitting within a rounding hair of the next step is treated as that
+    step. Nothing is ever rounded up beyond that tolerance, so the result can
+    still be smaller than the raw unit count, never larger.
+    """
+    if step <= 0:
+        raise ValueError("step must be greater than zero")
+    quotient = value / step
+    nearest = round(quotient)
+    tolerance = 1e-9 * max(1.0, abs(nearest))
+    if abs(quotient - nearest) < tolerance:
+        steps = float(nearest)
+    else:
+        steps = float(math.floor(quotient))
+    return steps * step
 
 CSV_FILES = {
     "contract-specifications.csv",
@@ -99,7 +125,7 @@ def position_size(
     if unit_step <= 0:
         raise ValueError("unit_step must be greater than zero")
     units = (budget - commission) / (stop_distance * quote_rate)
-    tradable = math.floor(units / unit_step) * unit_step
+    tradable = floor_to_step(units, unit_step)
     worst_case = tradable * stop_distance * quote_rate + commission
     return {
         "risk_budget": budget,
