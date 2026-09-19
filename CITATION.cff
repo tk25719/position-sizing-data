@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Position sizing reference data and worked arithmetic for forex, stocks and crypto futures"
+message: "If you use this dataset, please cite it as below."
+type: dataset
+authors:
+  - family-names: "YI"
+    given-names: "JUN"
+doi: 10.5281/zenodo.22840538
+license: MIT
+repository-code: "https://github.com/tk25719/position-sizing-data"
+url: "https://positionsizetool.com/"
+keywords:
+  - position sizing
+  - risk management
+  - forex
+  - trading
