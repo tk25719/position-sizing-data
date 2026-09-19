@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "position-sizing-data"
-version = "0.1.0"
+version = "0.1.1"
 description = "Reference data and arithmetic for risk-based position sizing across forex, stocks and crypto futures"
 readme = "README.md"
 requires-python = ">=3.9"
