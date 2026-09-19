@@ -4,6 +4,7 @@
 [![PyPI](https://img.shields.io/pypi/v/position-sizing-data.svg)](https://pypi.org/project/position-sizing-data/)
 [![npm](https://img.shields.io/npm/v/position-sizing-data.svg)](https://www.npmjs.com/package/position-sizing-data)
 [![Go Reference](https://pkg.go.dev/badge/github.com/tk25719/position-sizing-data.svg)](https://pkg.go.dev/github.com/tk25719/position-sizing-data)
+[![Packagist](https://img.shields.io/packagist/v/tk25719/position-sizing-data.svg)](https://packagist.org/packages/tk25719/position-sizing-data)
 
 Reference data and arithmetic for position sizing across forex, stocks and crypto futures.
 
@@ -13,7 +14,7 @@ An interactive implementation of the same calculation lives at [https://position
 
 An archival copy of this dataset is deposited at Zenodo: [doi:10.5281/zenodo.22840538](https://doi.org/10.5281/zenodo.22840538). Use that DOI to cite the data in anything that outlives the repository.
 
-The same tables and formulas are published as installable packages, so the arithmetic can be checked from a REPL instead of a spreadsheet: [position-sizing-data on PyPI](https://pypi.org/project/position-sizing-data/) (source in `pypi/`), [position-sizing-data on npm](https://www.npmjs.com/package/position-sizing-data) (source in `npm/`), and the [Go module in this repository](https://pkg.go.dev/github.com/tk25719/position-sizing-data), which embeds the CSV files so `go get github.com/tk25719/position-sizing-data` needs nothing else.
+The same tables and formulas are published as installable packages, so the arithmetic can be checked from a REPL instead of a spreadsheet: [position-sizing-data on PyPI](https://pypi.org/project/position-sizing-data/) (source in `pypi/`), [position-sizing-data on npm](https://www.npmjs.com/package/position-sizing-data) (source in `npm/`), and the [Go module in this repository](https://pkg.go.dev/github.com/tk25719/position-sizing-data), which embeds the CSV files so `go get github.com/tk25719/position-sizing-data` needs nothing else. PHP users can `composer require tk25719/position-sizing-data`; that package ships in `composer.json` and `src/`.
 
 The four data files are also mirrored on data platforms, each with the same provenance note attached: the canonical landing page is [positionsizetool.com/reference-data.html](https://positionsizetool.com/reference-data.html), and the mirrors are [Kaggle](https://www.kaggle.com/datasets/eugene9409/position-sizing-reference-data) and [Hugging Face](https://huggingface.co/datasets/eugene9099/position-sizing-data).
 
