@@ -1,6 +1,8 @@
 # position-sizing-data
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22840538.svg)](https://doi.org/10.5281/zenodo.22840538)
+[![PyPI](https://img.shields.io/pypi/v/position-sizing-data.svg)](https://pypi.org/project/position-sizing-data/)
+[![npm](https://img.shields.io/npm/v/position-sizing-data.svg)](https://www.npmjs.com/package/position-sizing-data)
 
 Reference data and arithmetic for position sizing across forex, stocks and crypto futures.
 
@@ -9,6 +11,8 @@ This repository exists because the numbers behind "how many units should I trade
 An interactive implementation of the same calculation lives at [https://positionsizetool.com/](https://positionsizetool.com/).
 
 An archival copy of this dataset is deposited at Zenodo: [doi:10.5281/zenodo.22840538](https://doi.org/10.5281/zenodo.22840538). Use that DOI to cite the data in anything that outlives the repository.
+
+The same tables and formulas are published as installable packages, so the arithmetic can be checked from a REPL instead of a spreadsheet: [position-sizing-data on PyPI](https://pypi.org/project/position-sizing-data/) and [position-sizing-data on npm](https://www.npmjs.com/package/position-sizing-data). Sources for both live in `pypi/` and `npm/`.
 
 ## Contents
 
