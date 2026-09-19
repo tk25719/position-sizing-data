@@ -14,6 +14,8 @@ An archival copy of this dataset is deposited at Zenodo: [doi:10.5281/zenodo.228
 
 The same tables and formulas are published as installable packages, so the arithmetic can be checked from a REPL instead of a spreadsheet: [position-sizing-data on PyPI](https://pypi.org/project/position-sizing-data/) and [position-sizing-data on npm](https://www.npmjs.com/package/position-sizing-data). Sources for both live in `pypi/` and `npm/`.
 
+The four data files are also mirrored on data platforms, each with the same provenance note attached: the canonical landing page is [positionsizetool.com/reference-data.html](https://positionsizetool.com/reference-data.html), and the mirrors are [Kaggle](https://www.kaggle.com/datasets/eugene9409/position-sizing-reference-data) and [Hugging Face](https://huggingface.co/datasets/eugene9099/position-sizing-data).
+
 ## Contents
 
 | File | What is in it |
