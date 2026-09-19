@@ -1,0 +1,26 @@
+{
+    "name": "tk25719/position-sizing-data",
+    "description": "Position sizing reference data and the arithmetic behind it: contract specifications, pip value by lot size, equity remaining after losing streaks, and the gain required to recover from a drawdown.",
+    "type": "library",
+    "keywords": ["finance", "position sizing", "risk management", "forex", "trading", "reference data"],
+    "homepage": "https://positionsizetool.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JUN YI",
+            "homepage": "https://positionsizetool.com/"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/tk25719/position-sizing-data",
+        "issues": "https://github.com/tk25719/position-sizing-data/issues"
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psizing\\": "src/"
+        }
+    }
+}
