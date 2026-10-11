@@ -1,0 +1,15 @@
+[package]
+name = "position-sizing-data"
+version = "0.1.1"
+edition = "2021"
+rust-version = "1.70"
+description = "Reference data and arithmetic for risk-based position sizing across forex, stocks and crypto futures"
+license = "MIT"
+authors = ["JUN YI"]
+repository = "https://github.com/tk25719/position-sizing-data"
+homepage = "https://positionsizetool.com/"
+readme = "README.md"
+keywords = ["position-sizing", "risk-management", "forex", "trading", "trading-calculator"]
+include = ["src/**/*", "data/*.csv", "LICENSE", "README.md"]
+
+[dependencies]
